@@ -1,3 +1,11 @@
+# WiFi WPS Cracker 🔐
+
+[![Python](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-UserLAnd%20%7C%20Linux%20%7C%20AnLinux-yellow.svg)]()
+
+> ⚠️ For **educational purposes only**. Use only on networks you own or have permission to test.
+
 # 🔐 WiFi Pentesting Toolkit – UserLAnd / AnLinux Compatible
 
 A simulated, ethical WiFi pentesting toolkit built in Python — designed to run on **UserLAnd**, **AnLinux**, **Termux**, and **standard Linux** distributions.

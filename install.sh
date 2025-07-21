@@ -1,7 +1,7 @@
 #!/bin/bash
-# WiFi Cracker Installation Script for UserLAnd/AnLinux
+# WiFi Cracker Installation Script for UserLAnd/AnLinux/Linux
 
-echo "=== WiFi Cracker Setup for UserLAnd/AnLinux ==="
+echo "=== WiFi Cracker Setup for UserLAnd/AnLinux/Linux ==="
 
 # Detect environment
 if [ -d "/data/data/tech.ula" ]; then
@@ -31,19 +31,20 @@ elif command -v pkg >/dev/null 2>&1; then
     pkg install -y python3 python3-pip wireless-tools net-tools iw curl wget
 fi
 
-# Install Python dependencies
-echo "Installing Python dependencies..."
-pip3 install --user colorama tabulate requests netifaces psutil
+# Download and install Python dependencies
+echo "Downloading and installing Python dependencies..."
+curl -o ~/requirements.txt https://raw.githubusercontent.com/n0obcoders/wifiwps/main/requirements.txt
+pip3 install --user -r ~/requirements.txt
 
 # Create directories
 echo "Creating directories..."
 mkdir -p ~/wifi_crack_results
 mkdir -p ~/wordlists
 
-# Download the script
+# Download the WiFi Cracker script
 echo "Setting up WiFi Cracker..."
-curl -o ~/wifi_cracker_userland.py https://raw.githubusercontent.com/yourusername/wifi-cracker/main/wifi_cracker_userland.py
+curl -o ~/wifi_cracker_userland.py https://raw.githubusercontent.com/n0obcoders/wifiwps/main/wifi_cracker_userland.py
 chmod +x ~/wifi_cracker_userland.py
 
-echo "=== Installation Complete ==="
-echo "Run with: python3 ~/wifi_cracker_userland.py"
+echo "=== ✅ Installation Complete ==="
+echo "👉 Run with: python3 ~/wifi_cracker_userland.py"

@@ -36,22 +36,22 @@ A simulated, ethical WiFi pentesting toolkit built in Python — designed to run
 
 ## 📦 Installation (UserLAnd / AnLinux / Ubuntu / Kali)
 
-Run the following commands in your terminal:
-
-```bash
-# Update system
+# 1️⃣ Update system packages
 sudo apt update && sudo apt upgrade -y
 
-# Install required packages
-sudo apt install -y python3 python3-pip wireless-tools net-tools iw curl wget
+# 2️⃣ Install required tools and dependencies
+sudo apt install -y python3 python3-pip wireless-tools net-tools iw curl wget sudo
 
-# Install Python dependencies
+# 3️⃣ Install required Python packages
 pip3 install colorama tabulate requests netifaces psutil
 
-# Clone the project
+# 4️⃣ Clone the project repository
 git clone https://github.com/n0obcoders/wifiwps.git
 cd wifiwps
 
-# Run the tool
-python3 wifi_pentest.py
+# 5️⃣ Make sure the main script is executable
+chmod +x wifi_cracker_userland.py
+
+# 6️⃣ Run the tool
+python3 wifi_cracker_userland.py
 
